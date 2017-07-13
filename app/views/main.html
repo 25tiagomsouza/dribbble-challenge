@@ -1,0 +1,7 @@
+<div class="row" ng-repeat="shot in shots">
+    <div class="text-center">
+        <h1>{{ shot.title }}</h1>
+        <h3><i class="material-icons icon">favorite</i> {{ shot.likes_count }} <i class="material-icons icon">visibility</i> {{ shot.views_count }}</h3>
+        <a href="/shot/{{ shot.id }}"><img ng-src="{{ shot.images.hidpi }}" /></a>
+    </div>
+</div>
